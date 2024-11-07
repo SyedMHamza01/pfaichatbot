@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>HELLO</pattern>
+    <template>
+    <random>
+            <li>HELLO!I AM HERE TO ASSIST YOU </li>
+            <li>Hi!I AM HERE TO ASSIST YOU</li>
+         </random>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>HOW ARE *</pattern>
+    <template>I AM GOOD</template>
+  </category>
+ 
+  <category>
+      <pattern>WHAT IS AIML</pattern>
+      <template>AIML IS ARTIFICIAL INTELLIGENCE MARKUP LANGUAGE</template>
+    </category>
+ 
+ <category>
+      <pattern>WHAT IS YOUR NAME</pattern>
+      <template>MY NAME IS JARVIS</template>
+    </category>
+ 
+  <category>
+      <pattern>WHO ARE YOU</pattern>
+      <template>I AM AN AI CHATBOT</template>
+    </category>
+    
+  <category>
+      <pattern>*</pattern>
+      <template>I CAN'T UNDERSTAND <star /> </template>
+    </category>
+    
+     <category>
+      <pattern>TELL ME WHAT * IS </pattern>
+      <template><srai> WHAT IS <star/></srai></template>
+    </category>
+
+<category>
+   <pattern>SCHOOL</pattern>
+   <template>School is an important institution in a child's life.</template>
+</category>
+
+ <category>
+   <pattern>_ SCHOOL</pattern>
+   <template>
+      <srai>SCHOOL</srai>
+   </template>
+</category>
+
+<category>
+   <pattern>#SCHOOL</pattern>
+   <template>
+      <srai>SCHOOL</srai>
+   </template>
+</category>
+
+<category>
+   <pattern>SCHOOL *</pattern>
+   <template>
+      <srai>SCHOOL</srai>
+   </template>
+</category>
+
+<category>
+   <pattern>_ SCHOOL^</pattern>
+   <template>
+      <srai>SCHOOL</srai>
+   </template>
+</category>
+
+<category>
+      <pattern>HI</pattern>
+      
+      <template>
+         <random>
+            <li><srai>HELLO</srai> </li>
+            <li> Hi! Nice to meet you! </li>
+         </random>
+      </template>
+   </category>
+   
+   <category>
+      <pattern>MY NAME IS *</pattern>
+      <template>
+          <random>
+         <li><set name="name"><star/></set> is a nice name.</li>
+        <li> <star/> good to see you </li>
+        </random>
+      </template>
+</category>
+
+<category>
+  <pattern>WHAT IS MY NAME</pattern>
+  <template>
+     Your name is <get name="name"/>.
+  </template>
+</category>
+
+ <category>
+      <pattern>MY NAME IS *</pattern>
+      <template>
+          <random>
+         <li><think><set name="name"><star/></set> is a nice name.</think></li>
+        <li> <star/> good to see you </li>
+        </random>
+      </template>
+</category>
+   
+
+ <category>
+      <pattern>MY PET NAME IS * </pattern>
+      <template>
+         <think><set name="PET"><star/></set> is a nice name.</think>
+      </template>
+</category>
+
+<category>
+  <pattern>WHAT IS MY PET NAME</pattern>
+  <template>
+     Your pet name is <get name="PET"/>.
+  </template>
+</category>
+
+</aiml>
